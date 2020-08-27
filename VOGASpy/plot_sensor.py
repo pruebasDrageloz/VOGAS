@@ -18,6 +18,7 @@ def plot_sensor(cj, filename, fig, this_sensor='GNP',this_color=[1,0,0], legend=
             plt.plot(tmp['t'][tmp['inds'] == 1]-cj['t0'], tmp['x'][tmp['inds'] == 1,iic], color=this_color, label=filename)
             plt.ylabel('baseline compensated')
             plt.title(str(tmp['names'][iic]))
+           
 
         if(legend):
             plt.legend(framealpha=1, frameon=True)
